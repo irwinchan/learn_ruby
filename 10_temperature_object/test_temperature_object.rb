@@ -60,7 +60,7 @@ class TestTemperature < MiniTest::Test
     assert_equal 212, Temperature.new({:c => 100}).to_fahrenheit
   end
 
-  # constructing factory methods
+  # # constructing factory methods
 
   def test_in_celsius
     assert_equal 50, Temperature.in_celsius(50).to_celsius
@@ -123,7 +123,7 @@ class TestTemperature < MiniTest::Test
 
   # utility class methods
 
-  # def test_.....
+  # def test_
 end
 
 # There are two extra credit problems also available

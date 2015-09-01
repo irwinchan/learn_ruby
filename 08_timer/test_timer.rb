@@ -15,7 +15,7 @@ class TestTimer < MiniTest::Test
     assert_equal 0, @timer.seconds
   end
 
-  # time_string
+  #time_string
   def test_display_0
     @timer.seconds = 0
     assert_equal "00:00:00", @timer.time_string

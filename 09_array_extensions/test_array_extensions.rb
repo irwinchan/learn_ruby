@@ -5,7 +5,7 @@ class TestArray < MiniTest::Test
   # sum
   def test_has_sum_method
     assert_respond_to [], :sum
-    assert_respond_to Array, :sum
+    assert_respond_to Array.new, :sum
 
     # [] and Array are synonymous
     #
@@ -30,7 +30,7 @@ class TestArray < MiniTest::Test
     assert_equal 7, [1,2,4].sum
   end
 
-  # square
+  # # square
   def test_returns_empty_when_empty
     assert_equal [], [].square
   end
@@ -39,7 +39,7 @@ class TestArray < MiniTest::Test
     assert_equal [1,4,9], [1,2,3].square
   end
 
-  # square!
+  # # square!
   def test_squares_original_array
     array = [1,2,3]
     array.square!
